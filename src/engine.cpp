@@ -89,9 +89,9 @@ void Engine::initShapes() {
             color color = {255, 255, 0};
 
             //added randomizer for lights on/off
-            bool rando = rand() % 2 == 0;
-            if (rando)
-                color = {.5,.5,.5,1};
+            //bool rando = rand() % 2 == 0;
+            //if (rando)
+                //color = {.5,.5,.5,1};
 
             light.push_back(make_unique<Rect>(shapeShader, pos, size, color));
             x += 125;
